@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ЛИПСЬКИЙ — сімейний барбершоп у Києві</title>
+  <meta name="description" content="Сімейний барбершоп «ЛИПСЬКИЙ» у Києві, вул. Мечникова, 5. Щодня 10:00–20:00. Онлайн-запис без передоплати.">
+  <meta name="theme-color" content="#121314">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23ece8e1%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-size=%2220%22 text-anchor=%22middle%22 font-family=%22serif%22 fill=%22%23161412%22%3E%D0%9B%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Lypskiy barbershop",
+    "alternateName": "ЛИПСЬКИЙ",
+    "address": {"@type": "PostalAddress", "streetAddress": "вулиця Мечникова, 5", "addressLocality": "Київ", "addressCountry": "UA"},
+    "geo": {"@type": "GeoCoordinates", "latitude": 50.4373588, "longitude": 30.53146351},
+    "openingHours": "Mo-Su 10:00-20:00",
+    "priceRange": "100–2000 UAH",
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.99", "reviewCount": "953"}
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">До змісту</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ЛИПСЬКИЙ — на початок">
+      <span class="brand__mark" aria-hidden="true">Л</span>
+      <span class="brand__name">ЛИПСЬКИЙ</span>
+    </a>
+    <nav class="topnav" aria-label="Основна навігація">
+      <a href="#masters">Майстри</a>
+      <a href="#scanner">AI-підбір</a>
+      <a href="#prices">Ціни</a>
+      <a href="#visit">Контакти</a>
+    </nav>
+    <a class="btn btn--solid topbar__cta" href="https://n561092.alteg.io/company/530369" target="_blank" rel="noopener">Записатися</a>
+  </header>
+
+  <main id="main" class="bento">
+
+    <!-- HERO -->
+    <section id="top" class="tile tile--hero reveal" aria-labelledby="hero-title">
+      <p class="eyebrow">Сімейний барбершоп · Київ</p>
+      <h1 id="hero-title" class="hero__title">Стрижка,<br><em>за якою</em> повертаються.</h1>
+      <p class="hero__lead">Три покоління клієнтів в одному кріслі: батьки, сини, онуки. П’ять майстрів, щодня з 10:00 до 20:00 на Мечникова, 5.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="https://n561092.alteg.io/company/530369" target="_blank" rel="noopener">Обрати час</a>
+        <a class="btn btn--ghost" href="#scanner">Підібрати стрижку</a>
+      </div>
+    </section>
+
+    <!-- RATING -->
+    <section class="tile tile--rating reveal" aria-label="Рейтинг">
+      <p class="eyebrow">Рейтинг в Altegio</p>
+      <p class="stat"><span class="stat__num">4.99</span><span class="stat__unit">/ 5</span></p>
+      <p class="muted">953 відгуки. Лише 5 оцінок нижче за п’ять.</p>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" class="tile tile--visit reveal" aria-labelledby="visit-title">
+      <p class="eyebrow">Де і коли</p>
+      <h2 id="visit-title" class="tile__title">вул. Мечникова, 5</h2>
+      <dl class="facts">
+        <div><dt>Щодня</dt><dd>10:00 — 20:00</dd></div>
+        <div><dt>Передоплата</dt><dd>Не потрібна</dd></div>
+      </dl>
+      <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=50.4373588,30.53146351" target="_blank" rel="noopener">Прокласти маршрут</a>
+    </section>
+
+    <!-- AI SCANNER -->
+    <section id="scanner" class="tile tile--scanner reveal" aria-labelledby="scan-title">
+      <div class="scanner__copy">
+        <p class="eyebrow"><span class="chip">AI · beta</span> Підбір форми</p>
+        <h2 id="scan-title" class="tile__title">Яка стрижка пасує саме вам?</h2>
+        <p class="muted">Завантажте фото анфас. Обробка відбувається лише на вашому пристрої — фото нікуди не надсилається.</p>
+
+        <div class="scanner__steps" data-step="upload">
+          <label class="btn btn--solid upload">
+            <input id="scan-file" type="file" accept="image/*" capture="user">
+            Завантажити фото
+          </label>
+          <p class="hint">Порада: рівне світло, волосся прибране з чола.</p>
+        </div>
+
+        <div class="scanner__result" id="scan-result" hidden>
+          <p class="eyebrow">Уточніть форму обличчя</p>
+          <div class="shapes" role="radiogroup" aria-label="Форма обличчя" id="shape-list"></div>
+          <div class="reco" id="reco" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <figure class="scanner__frame" id="scan-frame">
+        <div class="frame__placeholder" id="scan-placeholder" aria-hidden="true">
+          <svg viewBox="0 0 100 120" class="face-outline"><ellipse cx="50" cy="58" rx="30" ry="40"/><path d="M38 52h6M56 52h6M46 74q4 3 8 0"/></svg>
+        </div>
+        <img id="scan-img" alt="Ваше фото для аналізу" hidden>
+        <div class="scan-layer" aria-hidden="true">
+          <span class="scan-line"></span>
+          <span class="scan-grid"></span>
+          <span class="scan-corners"></span>
+        </div>
+        <figcaption class="scan-status" id="scan-status">Очікує фото</figcaption>
+      </figure>
+    </section>
+
+    <!-- MASTERS -->
+    <section id="masters" class="tile tile--masters reveal" aria-labelledby="masters-title">
+      <div class="tile__head">
+        <h2 id="masters-title" class="tile__title">Майстри</h2>
+        <p class="muted">Три рівні — одна школа.</p>
+      </div>
+      <ul class="masters" id="masters-list"></ul>
+    </section>
+
+    <!-- PRICES -->
+    <section id="prices" class="tile tile--prices reveal" aria-labelledby="prices-title">
+      <div class="tile__head">
+        <h2 id="prices-title" class="tile__title">Ціни</h2>
+        <div class="segmented" role="tablist" aria-label="Рівень майстра" id="level-tabs"></div>
+      </div>
+      <ul class="pricelist" id="pricelist" role="tabpanel"></ul>
+      <p class="hint">Ціни з онлайн-запису на 10.11.2026. Остаточну вартість підтверджує майстер.</p>
+    </section>
+
+    <!-- FAMILY -->
+    <section class="tile tile--family reveal" aria-labelledby="family-title">
+      <p class="eyebrow">Сімейна традиція</p>
+      <h2 id="family-title" class="tile__title">Батько + син</h2>
+      <p class="family__price">від <strong>1 200 ₴</strong></p>
+      <p class="muted">Один візит на двох. Для двох синів — від 1 800 ₴.</p>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="tile tile--review reveal" aria-label="Відгук клієнта">
+      <blockquote class="quote" id="quote">
+        <p id="quote-text">Я вже без перебільшення рік ходжу до цього майстра, і ніколи не пішов додому незадоволений.</p>
+        <footer id="quote-author">Тимур · до Назара</footer>
+      </blockquote>
+    </section>
+
+    <!-- BOOK -->
+    <section class="tile tile--book reveal" aria-labelledby="book-title">
+      <h2 id="book-title" class="tile__title">Запис онлайн за хвилину</h2>
+      <p class="muted">Без передоплати. Перенести чи скасувати візит можна самостійно.</p>
+      <a class="btn btn--solid" href="https://n561092.alteg.io/company/530369" target="_blank" rel="noopener">Записатися</a>
+    </section>
+
+  </main>
+
+  <footer class="sitefoot">
+    <p>© 2026 Lypskiy barbershop · Київ, вул. Мечникова, 5</p>
+  </footer>
+
+  <!-- Mobile thumb bar -->
+  <nav class="dock" aria-label="Швидка навігація">
+    <a href="#top" class="dock__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-5H9v5H5a1 1 0 0 1-1-1z"/></svg><span>Головна</span></a>
+    <a href="#masters" class="dock__item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>Майстри</span></a>
+    <a href="https://n561092.alteg.io/company/530369" target="_blank" rel="noopener" class="dock__item dock__item--main"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>Запис</span></a>
+    <a href="#scanner" class="dock__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><circle cx="12" cy="12" r="3"/></svg><span>AI-підбір</span></a>
+    <a href="#prices" class="dock__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg><span>Ціни</span></a>
+  </nav>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
